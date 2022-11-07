@@ -1,0 +1,502 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500;600;700&display=swap');
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Mono', monospace;
+}
+
+body {
+    background-color: #3d70ac;
+}
+
+
+/* Header NavBar start */
+
+header {
+    display: flex;
+    background-color: white;
+    align-items: center;
+    justify-content: space-around;
+    position: sticky;
+    top: 0%;
+    z-index: 1000;
+    min-width: 100%;
+}
+
+.logoBox {
+    width: 60px;
+    display: inline-block;
+    cursor: pointer;
+}
+
+.logoBox img {
+    width: 100%;
+    margin: 10px;
+    margin-left: 50px;
+}
+
+.navLink {
+    margin-left: 70px;
+}
+
+.navLink li,
+a {
+    text-decoration: none;
+    color: black;
+    font-size: 17px;
+    font-weight: 500;
+}
+
+.navLink li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 70px;
+    text-transform: uppercase;
+    transition: all 0.3s ease 0s;
+}
+
+.navLink li:hover {
+    border-bottom: 2px solid rgb(33, 123, 213);
+}
+
+.navIcons a {
+    margin-right: 30px;
+}
+
+.navIcons input {
+    margin-left: 10px;
+    padding: 7px 5px;
+    height: 20px;
+}
+
+.navIcons a i:hover {
+    transform: scale(1.1);
+}
+
+
+/* Header NavBar end */
+
+
+/* Main Content start*/
+
+main {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 900px;
+    height: 600px;
+    background-color: rgb(33 37 40);
+    margin: 20px;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 7px 7px 10px rgb(135, 190, 245);
+    animation-duration: 3s;
+}
+
+.container .imgbox {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    background-color: #ffffff;
+    border: none;
+    border-top-left-radius: 20px;
+    border-end-start-radius: 20px;
+}
+
+.container .imgbox::before {
+    content: 'Nike';
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    color: #000;
+    opacity: 0.1;
+    font-size: 9em;
+    font-weight: 800;
+}
+
+.container .imgbox img {
+    position: relative;
+    width: 650px;
+    transform: rotate(-30deg);
+    left: -20px;
+    top: 30px;
+}
+
+.container .detail {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    height: 100%;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.container .detail h2 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    line-height: 0.8em;
+    color: rgb(167, 167, 167);
+}
+
+.container .detail h2 span {
+    font-size: 0.4em;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: rgb(255, 255, 255);
+}
+
+.container .detail p {
+    max-width: 85%;
+    margin-left: 15%;
+    color: rgb(115, 115, 115);
+    font-size: 15px;
+}
+
+.container .detail h3 {
+    margin: 0;
+    padding: 0;
+    font-size: 2.5em;
+    color: #a2a2a2;
+    float: left;
+}
+
+.container .detail button {
+    background-color: #006dbc;
+    color: #fff;
+    border: none;
+    box-shadow: none;
+    outline: none;
+    padding: 10px 20px;
+    margin-top: 5px;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    font-weight: 600;
+    border-radius: 40px;
+    float: right;
+    cursor: pointer;
+}
+
+
+/* Main Content end */
+
+
+/* Item cards start */
+
+section {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
+    min-height: 100vh;
+    
+}
+
+.itemsBox {
+    position: relative;
+    margin-bottom: 50px;
+    margin-top: 10px;
+}
+
+.itemsBox .card {
+    position: relative;
+    width: 320px;
+    height: 450px;
+    background: #232323;
+    border-radius: 20px;
+    overflow: hidden;
+    box-shadow: 10px 10px 10px rgb(59, 57, 57);
+}
+
+.itemsBox .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    clip-path: circle(150px at 80% 20%);
+    transition: 0.5s ease-in-out;
+}
+
+.itemsBox .one::before {
+    background-color: #64828e;
+}
+
+.itemsBox .two::before {
+    background-color: #859bb1;
+}
+
+.itemsBox .three::before {
+    background-color: #004754;
+}
+
+.itemsBox .four::before {
+    background-color: #ffffff;
+}
+
+.itemsBox .five::before {
+    background-color: #d80004;
+}
+
+.itemsBox .six::before {
+    background-color: #560009;
+}
+
+.itemsBox .seven::before {
+    background-color: #cb482b;
+}
+
+.itemsBox .eight::before {
+    background-color: #93986d;
+}
+
+.itemsBox .nine::before {
+    background-color: #d67f3a;
+}
+
+.itemsBox .card:hover:before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.itemsBox .card::after {
+    content: 'Nike';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.itemsBox .card .imgBx {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10;
+    width: 100%;
+    height: 220px;
+    transition: 0.5s;
+}
+
+.itemsBox .card:hover .imgBx {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.itemsBox .card .imgBx img {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) rotate(-25deg);
+    width: 350px;
+}
+
+.itemsBox .card .contentBox {
+    position: absolute;
+    bottom: 0%;
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    transition: 1s;
+    z-index: 1;
+}
+
+.itemsBox .card:hover .contentBox {
+    height: 180px;
+}
+
+.itemsBox .card .contentBox h2 {
+    position: relative;
+    font-weight: 600;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.itemsBox .card .contentBox h3 {
+    font-weight: 300;
+    color: rgb(158, 158, 158);
+    margin-bottom: 5px;
+}
+
+.itemsBox .card .contentBox h4 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+    text-shadow: 0 0 10px rgb(255, 255, 255), 0 0 20px #fff;
+}
+
+.itemsBox .card .contentBox a {
+    display: inline-block;
+    padding: 10px 15px;
+    background: #fff;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    transform: translateY(50px);
+    margin-top: 25px;
+    transition: 0.5s;
+}
+
+.itemsBox .card:hover .contentBox a {
+    opacity: 1;
+    transform: translateY(0px);
+    transition-delay: 0.6s;
+}
+
+
+/* Item cards end */
+
+
+/* Footer start */
+
+footer {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    min-width: 100%;
+    background-color: rgb(59 57 57);
+    height: 55px;
+}
+
+footer .contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contact form {
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #232323;
+    padding: 5px;
+}
+
+.contact form .email {
+    border: none;
+    outline: none;
+    width: 200px;
+    background-color: #232323;
+    color: white;
+    padding: 5px;
+}
+
+.contact .btn {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: 500;
+    cursor: pointer;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    background-color: #232323;
+    color: rgb(177, 177, 177);
+}
+
+.social {
+    display: flex;
+    gap: 1.5rem;
+}
+
+.social i {
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.social i {
+    font-size: 1.3rem;
+    transition: 0.3s ease-in-out;
+}
+
+.social i:hover {
+    transform: scale(1.2);
+}
+
+
+/* Footer end */
+
+
+/* Responsive  */
+
+@media (max-width: 1080px) {
+    .container {
+        height: auto;
+    }
+    .container .imgbox {
+        padding: 40px;
+        box-sizing: border-box;
+        width: 100% !important;
+        height: auto;
+        text-align: center;
+        overflow: hidden;
+        border-end-start-radius: 0px;
+        border-top-right-radius: 20px;
+    }
+    .container .imgbox img {
+        transform: rotate(0deg);
+        left: initial;
+        max-width: 100%;
+    }
+    .detail {
+        width: 100% !important;
+        height: auto;
+        padding: 20px;
+    }
+    .container .detail p {
+        max-width: 100%;
+        margin-left: 0;
+        font-size: 13px;
+    }
+}
+
+@media (max-width: 800px) {
+    header nav {
+        display: none;
+    }
+    header {
+        display: flex;
+        justify-content: space-around;
+    }
+}
+
+@media (max-width: 530px) {
+    header {
+        display: flex;
+        justify-content: center;
+    }
+    header .navIcons {
+        display: none;
+    }
+    header .logoBox img {
+        margin-left: 0px;
+    }
+}
+
+@media (max-width: 580px) {
+    footer .social {
+        display: none;
+    }
+    footer {
+        width: auto;
+    }
+}
